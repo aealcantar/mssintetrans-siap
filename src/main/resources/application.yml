@@ -1,0 +1,24 @@
+server:
+  port: 8089
+  servlet:
+    contextPath: /mssintetrans-siap
+logging:
+  file:
+     name: /bitacoras/consultaMatricula.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        transaction:
+          interceptor: DEBUG
+spring:
+  jackson:
+    serialization:
+      wrap-root-value: true
+    deserialization:
+      unwrap-root-value: true
+app:
+  agenda:
+    digital:
+      url: 'http://localhost:8089/'
+      cor: 'http://localhost:8089/'
